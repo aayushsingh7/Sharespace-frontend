@@ -1,0 +1,62 @@
+
+
+.Box-fffj {
+  width: 80vw;
+  border-radius: 20px;
+  height: 80vh;
+  max-width: 975px;
+}
+
+
+.oo {
+  max-width: 440px;
+  padding: 80px 40px;
+}
+
+.Box input {
+  padding: 17px;
+  margin: 5px 0px;
+}
+
+/* .Box button {
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 14px;
+  font-size: 1.1rem;
+  color: rgb(254, 254, 254);
+  background: rgb(1, 145, 248);
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+} */
+
+.Box h2 {
+  font-size: 2rem;
+  font-family: cursive;
+  margin-bottom: 50px;
+}
+
+
+@media (max-width: 500px) {
+  .Box-fffj{
+    padding: 20px;
+  }
+}
+
+@media (max-width:950px) {
+    .Box-fffj{
+        width: 90vw;
+    }
+}
+
+@media (max-width:650px) {
+    .img{
+        display: none;
+    }
+    .oo{
+        padding: 80px 0px;
+    }
+}

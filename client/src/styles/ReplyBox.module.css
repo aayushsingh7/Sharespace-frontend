@@ -1,0 +1,112 @@
+.Container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.Container:hover {
+    background: #181818;
+}
+
+.ProfilePic img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.RREIERE {
+    display: flex;
+    margin-left: 20px;
+    color: #e3e3e3;
+    line-height: 1.4rem;
+    flex-direction: column;
+}
+
+.RREIERE h4 {
+    color: white;
+}
+
+.RREIERE span {
+    color: #777;
+}
+
+.___part_1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.___part_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.___part_2 span {
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+.___part_2 svg {
+    color: #777;
+    font-size: 20px;
+}
+
+
+.posting {
+    margin-left: 3px;
+    font-weight: 600;
+    font-size: 13px;
+    position: relative;
+    top: -1px;
+
+}
+
+
+.loading {
+    background: #222;
+}
+
+.loader {
+    width: 100%;
+    position: absolute;
+    bottom: -5%;
+    overflow: hidden;
+    height: 4px;
+    left: 0%;
+}
+
+.loader span {
+    position: absolute;
+    height: 3px;
+    background: rgb(0, 122, 236);
+    animation: loader 1s ease-in-out infinite;
+    border-radius: 10px;
+}
+
+@keyframes loader {
+    0% {
+        left: 0%;
+        width: 2%;
+    }
+
+    60% {
+        left: 30%;
+        width: 50%;
+    }
+
+    100% {
+        left: 120%;
+        width: 2%;
+    }
+}

@@ -1,0 +1,64 @@
+.Curr_user_details{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+   }
+   
+   .Curr_user_details div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .Curr_user_details button{
+    padding: 8px 12px;
+    appearance: none;
+    /* background: none; */
+    border: none;
+    color: white;
+    background: red;
+    border-radius: 7px;
+    cursor: pointer;
+   }
+
+   .Curr_user_details img{
+       width: 40px;
+       height: 40px;
+       border-radius: 50%;
+   }
+   
+   .Curr_user_details p{
+       margin-left: 10px;
+       font-weight: 600;
+       font-size: 1.1rem;
+       color: white;
+   }
+
+   .Story_Box .txt{
+    font-size: 1.1rem;
+    appearance: none;
+    border: none;
+  background:#00000097;
+    color: white; 
+    outline: none;
+    z-index: 10;
+    position: relative;
+    cursor: grab;
+    text-align: center;
+    padding: 7px 10px;
+    border-radius: 10px;
+    max-width: 90%;
+    resize:none;
+    font-family: sans-serif;
+    line-height: 1.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%) !important; */
+  }
+  
+  .Story_Box textarea::-webkit-scrollbar{
+    width: 0px;
+  }

@@ -1,0 +1,130 @@
+.Container{
+    background:#000000d8;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.show{
+    display: flex;
+    animation: view .1s ease-in-out;
+    /* transition: .s ease-in-out; */
+}
+
+@keyframes view {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes unView {
+  0% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+    visibility: hidden;
+  }
+}
+
+.hide {
+  display: flex;
+  animation: unView 0.1s ease-in-out forwards;
+  /* Specify animation-fill-mode to maintain the final animation state */
+  animation-fill-mode: forwards;
+}
+
+.Story_Box{
+    width: 100vw;
+    max-width: 400px;
+    height:95vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Story_Box video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.Story__Con{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.Header{
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.Header img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.Header p{
+    font-size: 1rem;
+    color: white;
+    margin-right: 10px;
+}
+
+.Header span{
+    font-size: 1rem;
+    color: #999;
+}
+
+.Logo{
+    font-size: 24px;
+    color:white;
+    padding: 10px;
+    font-family: cursive !important;
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+
+.Logo span{
+    color: aquamarine;
+    margin-left: 5px;
+    font-family: sans-serif !important;
+}
+
+.Close_2{
+  display: none;
+}
+
+@media (max-width:550px) {
+  .Close{
+    display: noen;
+  }
+  .Close_2{
+    display: flex;
+    position: fixed !important;
+    z-index: 10;
+  }
+  .Story_Box{
+    height: 100dvh;
+  }
+}

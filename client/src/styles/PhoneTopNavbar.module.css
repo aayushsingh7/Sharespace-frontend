@@ -1,0 +1,37 @@
+/* .Container{
+   width: 100%;
+   height: 60px;
+   padding: 10px 15px;
+   border-top: 1px solid #444;
+   display:none;
+   align-items: center;
+   justify-content: space-between;
+   background: black;
+   color: white;
+   font-size: 1.6rem;
+   font-family: cursive;
+}
+
+@media (max-width:560px) {
+    .Container{
+        display: flex;
+    }
+}
+
+.notification_heart{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: red;
+    position: absolute;
+    font-size: 11px;
+    width:20px;
+    height:20px;
+    top: -2%;
+    left: 67%;
+    padding-right: 2px;
+    border: 1px solid black;
+    /* animation: 5s notification_alert ease-in-out infinite;
+} */

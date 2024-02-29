@@ -1,0 +1,102 @@
+.Container {
+  margin-top:10px;
+  padding: 17px;
+}
+
+.Saved {
+  width: 100%;
+  max-width: 900px;
+  display: inline-grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.elem_tracker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.Box {
+  width: 100%;
+  height: 33vw;
+  max-height: 320px;
+  border: 1px solid rgb(34, 34, 34);
+}
+
+.Template {
+  height: calc(100dvh - 130px);
+  min-width: 400px;
+}
+
+.Template svg {
+  font-size: 120px;
+  color: white;
+}
+
+.Template p {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.Template button {
+  padding: 10px 12px;
+  font-size: 15px;
+}
+
+.Template span {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #888;
+  text-align: center;
+}
+
+.Loading_Box {
+  width: 100%;
+  height: 33vw;
+  max-height: 320px;
+  background: linear-gradient(to left, #202020, #181818);
+  background-size: 200% 100%;
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.Box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+
+.Container h2 {
+  max-width: 900px;
+  text-align: start;
+}
+
+.Box video {
+  object-fit: cover;
+}
+
+@media (max-width: 590px) {
+  .Container {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0px 0px 60px 0px;
+  }
+
+  .Saved {
+    row-gap: 5px;
+    column-gap: 5px;
+    padding: 10px;
+  }
+}

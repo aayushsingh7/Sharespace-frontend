@@ -1,0 +1,27 @@
+
+  /* .Post{
+    height: 550px !important;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+
+
+  .user_and_description span{
+    color: white;
+  }
+
+  .user_and_description p{
+    color: #f4f2f2;
+    display: flex;
+    line-height:1.5rem;
+  }
+
+  @media (max-width:560px) {
+    .Post{
+      max-height:none;
+    }
+    .Post_Details{
+      padding: 14px;
+    }
+  } */

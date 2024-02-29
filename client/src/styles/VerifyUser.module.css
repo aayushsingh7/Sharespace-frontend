@@ -1,0 +1,19 @@
+.Container{
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    position: fixed;
+    left: 0%;
+    z-index: 100000000;
+}
+
+.active{
+    display: flex;
+}
+
+.disabled{
+    display: none;
+}

@@ -1,0 +1,276 @@
+.Container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: black;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #202020, #181818);
+    background-size: 200% 100%;
+    animation: loading 2s linear infinite;
+  }
+
+.Container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.loading_btn {
+  appearance: none;
+  border: none;
+  height: 32px !important;
+  border-radius: 10px;
+}
+
+.Children {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 900px;
+  flex-direction: column;
+}
+
+.Header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.img_loading {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+
+.UserInfo_header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.UserInfo {
+  margin-left: 80px;
+}
+
+/* .UserInfo_header p {
+    font-size: 1.5rem;
+    color: white;
+} */
+
+.UserInfo_header button {
+  appearance: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 90px;
+}
+
+.AccountInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.Bio p {
+  height: 10px;
+  margin: 5px 0px;
+  border-radius: 10px;
+}
+
+.AccountInfo p {
+  width: 100px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.Bio {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 10px;
+  white-space: pre-wrap;
+  color: white;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+  flex-direction: column;
+}
+
+
+.Container svg {
+  color: #888;
+}
+
+.p {
+  /* font-size: 1rem; */
+  /* color: #888; */
+}
+
+.UserInfo_Mob {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Account_Public_Info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.UserInfo .AccountInfo {
+  height: 25px;
+}
+
+
+.Mob_Bio {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* margin-top: 10px; */
+  white-space: pre-wrap;
+  color: white;
+}
+
+.Button_Options_Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.Button_Options_Container_Dextop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: 25px !important;
+}
+
+.Button_Options_Container_Dextop button {
+  margin-top: 0px !important;
+}
+
+.Mob_Profile_Navbar {
+  height: 60px;
+  background: black;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px;
+}
+
+.Mob_Profile_Navbar p {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+}
+
+.mob {
+  display: none;
+}
+
+.mob .AccountInfo p {
+  width: 60px;
+  border-radius: 10px;
+}
+
+.UserInfo_Mob .AccountInfo {
+  margin-top: 0px;
+}
+
+
+@media (max-width: 580px) {
+  .Header {
+    display: none;
+    padding: 20px 17px 20px 17px;
+  }
+  .mob {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .mob .img_loading {
+    height: 80px;
+    width: 80px;
+  }
+
+  /* .Mob_Bio {
+    line-height: 1.4rem;
+  } */
+  /* .Children {
+    margin-top: 70px;
+  } */
+  /* .Mob_Profile_Navbar {
+    display: flex;
+  } */
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* @media (max-width:750px) {
+  .Posts_Container{
+      padding-bottom: 80px;
+  }
+} */
+
+@media (max-width:700px) {
+  .UserInfo{
+      margin-left: 40px;
+  }
+  .img_loading{
+      width: 100px;
+      height: 100px;
+  }
+}
+
+@media (max-width:750px) {
+  .Container{
+    
+      padding: 0px 0px 0px 71px;
+  }
+  /* .Children{
+      align-items: center;
+  } */
+}
+@media (max-width:590px) {
+  .Container{
+      padding: 0px 0px 0px 0px;
+  }
+}
+
+
+/* .p{
+    height: 10px;
+    width: 70px;
+} */
+
+

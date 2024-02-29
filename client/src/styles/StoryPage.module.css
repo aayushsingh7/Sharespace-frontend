@@ -1,0 +1,82 @@
+
+
+.Story_Box button {
+  font-size: 22px;
+  color: #000000;
+  background: #f1f1f1;
+}
+
+.Prev_button {
+  position: absolute;
+  left: -20%;
+  z-index: 100;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Next_button {
+  position: absolute;
+  right: -20%;
+  z-index: 100;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.Container{
+  align-items: center;
+}
+
+.Story_Box{
+  width: 100%;
+  max-width: 400px;
+  height: 90%;
+}
+
+
+.slider{
+  transition: .5s ease-in-out;
+}
+
+
+.close{
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  background: #222;
+}
+
+@media (max-width:590px) {
+  .Container{
+    align-items: start;
+  }
+  .close{
+    display: none;
+  }
+  
+  .Story_Box{
+    min-width: 100vw;
+    height:calc(100% - 60px);
+    border-radius: 0px;
+  }
+}
+
+@media (max-width:590px) {
+  .Story_Box button{
+    background:none;
+    color: white;
+    font-size: 30px;
+    height:65%;
+  }
+  .Next_button{
+    right: 0%;
+  }
+  .Prev_button{
+    left:0%;
+  }
+}

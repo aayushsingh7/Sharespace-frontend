@@ -1,0 +1,50 @@
+.Container{
+    width: 100%;
+    height: auto;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 10px;
+    height: 100px;
+}
+
+.Container::-webkit-scrollbar{
+    height: 0px;
+}
+
+.Box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70px;
+    margin-right: 14px;
+}
+
+.Box div{
+    width: 68px;
+    height: 68px;
+    border-radius: 50px;
+}
+
+.Box p{
+    margin-top: 9px;
+}
+
+.loading{
+    width: 100%;
+    height:100%;
+    background: linear-gradient(to left, #202020, #181818);
+    background-size: 200% 100%;
+    animation: loading 2s linear infinite;
+  }  
+
+  @keyframes loading {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }

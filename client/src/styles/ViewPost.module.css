@@ -1,0 +1,302 @@
+.box {
+  width: 100vw;
+  max-width: 1200px;
+  max-height: 680px;
+  position: absolute;
+  height: 60vw;
+}
+
+.Post {
+  height: 100%;
+  max-width: 55%;
+  border-right: 1px solid #333;
+}
+
+.img_ab{
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+}
+
+.h_auto{
+   height: auto !important; 
+}
+
+.reel {
+  /* width: 380px; */
+  aspect-ratio: 9/16;
+}
+
+.reel_type {
+  /* width: 490px; */
+  aspect-ratio: 9/16;
+
+}
+
+.square {
+  aspect-ratio: 1/1;
+}
+
+.UserInfo span {
+  color: white;
+  margin-left: 10px;
+}
+
+.Post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Post_Details {
+  width: 40%;
+  max-width: 490px;
+  min-width: 340px;
+}
+
+.Creator_Comment {
+  padding: 20px 20px 0px 20px;
+}
+
+.AllComments::-webkit-scrollbar {
+  width: 0px;
+  background: none;
+}
+
+.Post_Details h4 {
+  margin: 7px 0px;
+  color: white;
+  font-size: 0.97rem;
+}
+
+.Post_Details svg {
+  cursor: pointer;
+}
+
+.viewComment {
+  appearance: none;
+  border: none;
+  background: none;
+  color: #777;
+  margin: 9px 0px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.Uploaded_Date {
+  font-size: 0.7rem;
+  margin: 6px 0px;
+  color: #777;
+}
+
+.addComment p {
+  color: #0095ff;
+  cursor: pointer;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+}
+
+.Close_2 {
+  display: none;
+}
+
+.volumn_btn {
+  backdrop-filter: blur(4px);
+  background: rgb(255 255 255 / 55%);
+  top: 2%;
+  right: 2%;
+}
+
+.volumn_btn svg {
+  font-size: 20px;
+  color: #000000;
+}
+
+.b_btn{
+ background: #444444;;
+  padding: 9px;
+  margin: 0px 5px;
+}
+
+.b_btn svg{
+  font-size: 20px;
+  color: #f1f1f1;
+}
+
+.loading_post {
+  width:100%;
+  height: 100%;
+  background: linear-gradient(to left, #202020, #181818);
+  background-size: 200% 100%;
+  animation: loading 2s linear infinite;
+}
+
+.pre {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 5px;
+  white-space: pre-wrap;
+  color: white;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+  line-height: 1.4rem;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.pause {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 80px;
+}
+
+.mob_view {
+  display: none;
+}
+
+.pc_view {
+  display: flex;
+}
+
+
+@media (max-width: 950px) {
+  .box {
+    width: 94vw;
+  }
+}
+
+@media (max-width: 1100px) {
+  .box {
+    width: 95vw;
+  }
+}
+
+
+
+@media (max-width: 750px) {
+  .reel {
+    width: 100%;
+    min-height: 60vw;
+    max-height: 60vw;
+  }
+  .square {
+    width: 100%;
+    min-height: 60vw;
+    max-height: 60vw;
+  }
+  .reel_type {
+    width: 100%;
+    min-height: 60vw;
+    max-height: 60vw;
+  }
+  .Post img {
+    object-fit: contain;
+  }
+  .volumn_btn {
+    top: 87%;
+  }
+  .Post_Details {
+    max-width: 100%;
+    width: 100%;
+  }
+  .box {
+    min-height: 100dvh;
+  }
+
+  .Post {
+    border-right: none;
+    width: 95vw;
+    /* max-height: 500px;
+    max-width: 100%; */
+  }
+
+  .content {
+    flex-direction: column;
+    overflow-y: scroll;
+    justify-content: flex-start;
+  }
+  .content::-webkit-scrollbar {
+    width: 0px;
+  }
+  .AllComments {
+    overflow-y: visible !important;
+    flex-grow: none;
+  }
+  .More_Data {
+    width: 100%;
+    position: sticky;
+    bottom: 0%;
+    background: black;
+  }
+  .pc_view {
+    display: none;
+  }
+  .mob_view {
+    display: flex;
+  }
+}
+.Post{
+  max-width: 100%;
+}
+
+
+
+
+@media (max-width: 550px) {
+  .Post_Details {
+    height: auto;
+    min-width: 100%;
+    border-bottom: 1px solid #333;
+  }
+  .volumn_btn {
+    right: 4%;
+  }
+ 
+  .Post {
+    border-right: none;
+    /* min-height: auto;
+    height: auto; */
+    width: 100vw;
+  }
+  .box {
+    width: 100vw;
+    min-height: 100dvh;
+  }
+  .More_Data {
+    position: fixed;
+  }
+  .Close {
+    display: none;
+    z-index: 10;
+  }
+  .Close_2 {
+    display: flex;
+    z-index: 10;
+  }
+  .container {
+    height: 100dvh;
+  }
+  .AllComments {
+    padding-bottom: 80px;
+    border-top: none;
+  }
+  .addComment {
+    border-top: none;
+  }
+}

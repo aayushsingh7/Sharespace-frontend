@@ -1,0 +1,164 @@
+
+
+@keyframes view {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes unView {
+  0% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+    visibility: hidden;
+  }
+}
+
+.hide {
+  display: none;
+  animation: unView 0.1s ease-in-out forwards;
+  animation-fill-mode: forwards;
+}
+
+.box{
+    width: 100vw;
+    max-width: 590px;
+    height: 550px;
+}
+
+
+.Users_List{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
+.Users_List::-webkit-scrollbar{
+    width: 0px;
+}
+
+.Send{
+padding: 20px;
+width: 100%;
+border-top: 1px solid #444;
+}
+
+.Send button{
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 13px;
+    font-size: 1.1rem;
+    color: white;
+    background: #0095ff;
+    cursor: pointer;
+    border-radius: 40px;
+    width: 100%;
+}
+
+
+.UserDetails{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px 17px;
+    cursor: pointer;
+}
+
+.ProfilePic{
+    min-width: 47px;
+    min-height: 47px;
+    max-width: 47px;
+    max-height: 47px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.ProfilePic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Seprator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Details{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+}
+
+.Details p{
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: #999 !important;
+}
+
+.Details h4{
+    color: white !important;
+    margin-bottom: 0px !important;
+}
+
+.Seprator button{
+    appearance: none;
+    border: none;
+    background: none;
+    border: 3px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 25px;
+    width:25px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Seprator button:hover{
+    color: white;
+}
+
+.Hover:hover{
+    background:#303030;
+}
+
+.user_sug_p{
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+    padding: 14px 14px 14px 20px;
+    font-weight: 600;
+}
+
+.active{
+    border:none !important;
+}
+
+@media (max-width:600px) {
+    .box{
+        width: 95vw;
+        max-width: 95vw;
+    }
+} 

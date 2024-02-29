@@ -1,0 +1,20 @@
+.box {
+    height: 420px;
+    width: 400px;
+}
+
+@media (max-width:430px) {
+    .box{
+        width: 95vw;
+    }
+}
+
+.users_container::-webkit-scrollbar {
+    width: 6px;
+    height: 0px;
+}
+
+.users_container::-webkit-scrollbar-thumb {
+    background: #555;
+}
+

@@ -1,0 +1,85 @@
+.Container{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px 14px 10px 16px;
+    cursor: pointer;
+}
+
+.ProfilePic{
+    min-width: 47px;
+    min-height: 47px;
+    max-width: 47px;
+    max-height: 47px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.ProfilePic img{
+    width: 100%;
+    height: 47px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Seprator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Details{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+}
+
+.Details p{
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: #999 !important;
+}
+
+.Details h4{
+    color: white !important;
+    margin-bottom: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Details h4 p{
+    color: #0095ff !important;
+    font-size: 0.8rem !important;
+    margin-top:0px !important;
+}
+
+.Details h4 span{
+    color:white;
+    margin: 0px 5px;
+    font-size: 8px !important;
+}
+
+.Seprator button{
+    appearance: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+    background: #444;
+    padding: 9px 13px;
+    border-radius: 10px;
+}
+
+.Seprator button:hover{
+    color: white;
+}
+
+.Hover:hover{
+    background:#1b1b1b;
+}
