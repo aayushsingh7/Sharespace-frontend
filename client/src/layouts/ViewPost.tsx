@@ -110,7 +110,14 @@ const ViewPost: FC<ViewPostProps> = ({}) => {
       offset: offset,
     },
     skip: viewPost === false,
-  });
+  })
+
+useEffect(()=> {
+ if(!viewPost){
+setOffset(0)
+}
+},[viewPost])
+
 
   const {
     loading: postLoading,
@@ -154,7 +161,7 @@ const ViewPost: FC<ViewPostProps> = ({}) => {
     console.log("are yar bhai comments toh load ho rahe hi beti ");
     setCommentsLoading(true);
     if (commentsData?.getComments) {
-      if (selectedPostComments.length < 15) {
+      if (offset==0) {
         dispatch(setComments(commentsData?.getComments));
       }
       setCommentsLoading(false);
